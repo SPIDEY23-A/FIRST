@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website - Dashboard</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #f4f6f8;
+        color: #333;
+    }
+
+    /* Top Navigation */
+    .navbar {
+        background-color: #5f6f81;
+        color: white;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+    .nav-links a:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    /* Main Content */
+    .container {
+        padding: 40px;
+    }
+
+    .container h2 {
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    /* Cards */
+    .cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        flex: 1;
+        min-width: 250px;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #666;
+    }
+
+    .card p {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .cards {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>My Website</h1>
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Dashboard</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>120</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Projects</h3>
+                <p>8</p>
+            </div>
+
+            <div class="card">
+                <h3>Notifications</h3>
+                <p>3</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

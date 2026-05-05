@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+      
+        .menu {
+            text-align: right;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .menu a {
+            margin-left: 15px;
+            font-size: 18px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-top: 10px;
+        }
+
+        
+        .section {
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="menu">
+        <a href="#" onclick="showSection('dashboard')">Dashboard</a>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('profile')">Profile</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </div>
+
+    <hr>
+
+    <div id="dashboard" class="section">
+        <h2>Dashboard</h2>
+        <p>Welcome to my Dashboard.</p>
+    </div>
+
+    <div id="home" class="section">
+        <h2>Home</h2>
+        <p>Welcome to the home page.</p>
+    </div>
+
+    <div id="profile" class="section">
+        <h2>Profile</h2>
+        <p>Name: Deep Choudhary</p>
+        
+    </div>
+
+    <div id="about" class="section">
+        <h2>About</h2>
+        <p>My name is Deep Choudhary.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: ichikaBachika.com</p>
+        <p>Phone: 11221122</p>
+    </div>
+
+    
+    <script>
+        function showSection(id) {
+           
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+
+            document.getElementById(id).style.display = "block";
+        }
+
+        
+        showSection('dashboard');
+    </script>
+
+</body>
+</html>
