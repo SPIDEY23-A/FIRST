@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Home Page</title> 
+</head>
+<body>
+    <h1>Hello!</h1>
+    <h2>My name is <%= stu.name%>.</h2>
+    <h2>My University Roll Number is <%= stu.roll%></h2>
+    <h2> Age:<%= stu.age%></h2>
+    <h2>My Email iD  is <%= stu.email%></h2>
+
+    <% stu.hobbies.forEach((hob)=>{  %>
+    <h3><%= hob  %></h3>
+    <%})%>
+
+    
+</body>
+</html>
